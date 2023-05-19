@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Orifjon Nigmatov</title>
+</head>
+<body>
+    <header>
+        <h1>Оrifjon Nigmatov</h1>
+    </header>
+    <main>
+        <div class="info">
+            <img src="https://www.shkolazhizni.ru/img/content/i133/133607_or.jpg" alt="панда">
+            <h3>Салам алейкум! <br>Я Орифжон Нигматов</h3>
+        </div>
+        <div class="aboutYou">
+            <h2>Введи фамилию ниже</h2>
+            <input type="text" placeholder="Твоя фамилия">
+            <button onclick="setSurname()" id="b1">сохранить</button>
+            <h2>Поменяй цвет фона</h2>
+            <button onclick="setWallColor()" id="b2">поменять</button>
+        </div>
+        <div class="anketa">
+            <div class="getInfo">
+                <h2>Твое резюме</h2>
+                <input type="text" placeholder="Введи имя">
+                <input type="text" placeholder="Введи фамилию">
+                <input type="text" placeholder="Введи возраст">
+                <select>
+                    <option>Выбери пол</option> 
+                    <option>Мужской</option>
+                    <option>Женский</option>
+                </select>
+                <textarea name="" id="" cols="15" rows="5" placeholder="Напиши о себе"></textarea>
+                <button onclick="createResume()"><b>Отправить</b></button>
+                <button onclick="deleteResume()"><b>Сброс</b></button>
+            </div>
+            <div class="resume"></div>
+        </div>
+    </main>
+</body>
+</html>
